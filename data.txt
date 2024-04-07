@@ -1,81 +1,199 @@
-Lists in Python
-A built-in data type that stores set of values
-marks = [87, 64, 33, 95, 76]
-It can store elements of different types (integer, float, string, etc.)
-student = [”Karan”
-, 85,
-“Delhi”] #student[0], student[1]..
-#marks[0], marks[1]..
-student[0] =
-“Arjun” #allowed in python
-len(student) #returns length
-Apna College
-List Slicing
-list_name[ starting_idx : ending_idx ] #ending idx is not included
-Similar to String Slicing
-marks = [87, 64, 33, 95, 76]
-marks[ 1 : 4 ] is [64, 33, 95]
-marks[ : 4 ] is same as marks[ 0 : 4]
-marks[ 1 : ] is same as marks[ 1 : len(marks) ]
-marks[ -3 : -1 ] is [33, 95]
-Apna College
-List Methods
-list.append(4) #adds one element at the end
-list = [2, 1, 3]
-list.insert( idx, el ) #insert element at index
-list.sort( ) #sorts in ascending order
-list.reverse( ) #reverses list
-list.sort( reverse=True ) #sorts in descending order
-[1, 2, 3]
-[2, 1, 3, 4]
-[3, 2, 1]
-A
-[3, 1, 2]
-pna College
-List Methods
-list.remove(1) #removes first occurrence of element
-list = [2, 1, 3, 1]
-list.pop( idx ) #removes element at idx
-[2, 3, 1]
-Apna College
-Tuples in Python
-A built-in data type that lets us create immutable sequences of values.
-tup = (87, 64, 33, 95, 76) #tup[0], tup[1]..
-tup[0] = 43 #NOT allowed in python
-tup1 = ( )
-tup2 = ( 1, )
-tup3 = ( 1, 2, 3 )
-Apna College
-Tuple Methods
-tup.index( el ) #returns index of first occurrence
-tup = (2, 1, 3, 1)
-tup.count( el ) #counts total occurrences tup.count(1) is 2
-tup.index(1) is 1
-Apna College
-Let‘s Practice
-WAP to ask the user to enter names of their 3 favorite movies & store them in a list.
-WAP to check if a list contains a palindrome of elements. (Hint: use copy( ) method)
-[1, 2, 3, 2, 1] [1,
-“abc”
-,
-“abc”
-, 1]
-Apna College
-Let‘s Practice
-WAP to count the number of students with the “A” grade in the following tuple.
-Store the above values in a list & sort them from “A” to “D”
-.
-[”C”
-,
-“D”
-,
-“A”
-,
-“A”
-,
-“B”
-,
-“B”
-,
-“A”]
-Apna College
+MKK
+Unit 3
+COMPUTER-BASED 
+ASYMMETRIC-KEY CRYPTOGRAPHY 
+ALGORITHMS
+MKK
+INTRODUCTION
+• Symmetric-key cryptography is fast and efficient. 
+• However, it suffers from a big disadvantage of the problem of key exchange. 
+• The sender and the receiver of an encrypted message use the same key in 
+symmetric-key cryptography, and it is very tough to agree upon a common key 
+without letting anyone else know about it. 
+• Asymmetric-key cryptography solves this problem. Here, each communicating party 
+uses two keys to form a key pair—one key (the private key) remains with the party, 
+and the other key (the public key) is shared with everybody.
+MKK
+BRIEF HISTORY OF ASYMMETRIC-KEY CRYPTOGRAPHY
+In the mid-1970s, Whitfield Diffie, a student at the Stanford University met with Martin Hellman,
+his professor, and the two began to think about the problem of key exchange. After some research
+and complicated mathematical analysis, they came up with the idea of asymmetric-key cryptography.
+Many experts believe that this development is the first—and perhaps the only—truly revolutionary
+concept in the history of cryptography. Diffie and Hellman can, therefore, be regarded as the fathers of
+asymmetric-key cryptography
+However, there is a lot of debate regarding who should get the credit for developing asymmetric-key
+cryptography. It is believed that James Ellis of the British Communications Electronic Security Group
+(CSEG) proposed the idea of asymmetric-key cryptography in the 1960s. His ideas were based on an
+anonymous paper written at the Bell Labs during the Second World War. However, Ellis could not 
+devise a practical algorithm based on his ideas.
+Simultaneously, the US National Security Agency (NSA) was also working on asymmetric-key 
+cryptography. It is believed that the NSA system based on the asymmetric-key cryptography was 
+operational in the mid-1970s.
+MKK
+Based on the theoretical framework of Diffie and Hellman, in 1977, Ron Rivest, Adi Shamir and Len
+Adleman at MIT developed the first major asymmetric-key cryptography system, and published their
+results in 1978. This method is called RSA algorithm.
+Even today, RSA is the most widely accepted public-key solution. It solves the problem of key 
+agreements and distribution.
+To communicate securely over any network, all one needs to do is to publish one’s public key. All these
+public keys can then be stored in a database that anyone can consult. However, the private key only
+remains with the respective individuals.
+MKK
+AN OVERVIEW OF ASYMMETRIC-KEY CRYPTOGRAPHY
+• In asymmetric-key cryptography, also called public key cryptography, two different keys (which form 
+a key pair) are used. One key is used for encryption and only the other corresponding key must be 
+used for decryption. No other key can decrypt the message—not even the original (i.e. the first) key 
+used for encryption! The beauty of this scheme is that every communicating party needs just a key 
+pair for communicating with any number of other communicating parties.
+• One of the two keys is called the public key and the other is the private key.
+• The private key remains with you as a secret. You must not disclose your private key to anybody. 
+However, the public key is for the general public. It is disclosed to all parties that you want to 
+communicate with.
+MKK
+• Suppose A wants to send a message to B without having to worry about its security. 
+• Then, A and B should each have a private key and a public key.
+● A should keep her private key secret.
+● B should keep her private key secret.
+● A should inform B about her public key.
+● B should inform A about her public key.
+• Thus, we have a matrix as shown in Fig
+• Key details A should know B should know
+MKK
+Armed with this knowledge, asymmetric-key cryptography works as follows:
+1. When A wants to send a message to B, A encrypts the message using B’s public key. This is
+possible because A knows B’s public key.
+2. A sends this message (which was encrypted with B’s public key) to B.
+3. B decrypts A’s message using B’s private key.
+Thus, no one else can make any sense out of the message even if one can manage to intercept 
+the message. This is because the intruder (ideally) does not know about B’s private key. It is only B’s 
+private key that can decrypt the message.
+MKK
+Example:
+We can consider a practical situation that describes asymmetric-key cryptography as used in real life.
+Suppose a bank accepts many requests for transactions from its customers over an insecure network.
+The bank can have a private-key–public key pair.
+Use of a public-key–private-key pair by a bank
+MKK
+The RSA Algorithm
+RSA algorithm is an asymmetric cryptography algorithm. Asymmetric actually means that it works on 
+two different keys i.e. Public Key and Private Key. As the name describes that the Public Key is given to 
+everyone and the Private key is kept private.
+• The RSA algorithm is based on the mathematical fact that it is easy to find and multiply large prime 
+numbers together, but it is extremely difficult to factor their product. The private and public keys in 
+RSA are based on very large (made up of 100 or more digits) prime numbers.
+• However, the real challenge in the case of RSA is the selection and generation of the public and 
+private keys.
+• Let us now understand how the public and private keys are generated, and using them, how we can 
+perform encryption and decryption in RSA.
+MKK
+The RSA algorithm
+MKK
+Examples of RSA
+Let us choose D as 77, because we can see 
+that (5 * 77) mod 96 = 385 mod 96 = 1, 
+which satisfies our condition.
+MKK
+• Now, based on these values, let us consider an encryption and decryption process. 
+• Here, A is the sender and B is the receiver. As we can see, here we use an encoding scheme of 
+encoding alphabets as A = 1, B = 2, …, Z = 26. 
+• Let us assume that we want to encrypt a single alphabet F using this scheme, and with B’s public 
+key as 77 (known to A and B) and B’s private key (known only to B) as 5. 
+• Then the description is as follows
+MKK
+MKK
+SYMMETRIC- AND ASYMMETRIC-KEY CRYPTOGRAPHY
+• Comparison Between Symmetric- and Asymmetric-Key Cryptography
+MKK
+The Best of Both Worlds
+How economic it would be, if we can combine the two cryptography mechanisms, so as to achieve
+the better of the two, and yet do not compromise on any of the features! More specifically, we need 
+to ensure that the following objectives are met:
+1. The solution should be completely secure.
+2. The encryption and decryption processes must not take a long time.
+3. The generated cipher text should be compact in size.
+4. The solution should scale to a large number of users easily, without introducing any additional
+complications.
+5. The key-distribution problem must be solved by the solution.
+MKK
+Digital Signatures 
+• Digital signatures are the public-key primitives of message authentication. Digital signature is a 
+technique that binds a person/entity to the digital data.
+• As we know in asymmetric-key cryptography:
+– “If A is the sender of a message and B is the receiver, A encrypts the message with B’s public key and sends the 
+encrypted message to B.”
+• Let us now consider another scheme, as follows: 
+– If A is the sender of a message and B is the receiver, A encrypts the message with A’s private key and sends the 
+encrypted message to B.
+MKK
+• Here B use A’s public key to decrypt it, and therefore, access the plain text. 
+• If the decryption is successful, it assures B that this message was indeed sent by A. This is because if 
+B can decrypt a message with A’s public key, it means that the message must have been initially 
+encrypted with A’s private key
+• Therefore, someone posing as A (say C) could not have sent a message encrypted with A’s private 
+key to B.
+• Moreover, in the case of a dispute of non-repudiation
+MKK
+• Digital signatures have assumed great significance in the modern world of Web commerce. 
+• Most countries have already made provisions for recognizing a digital signature as a valid 
+authorization mechanism, just like paper-based signatures. 
+• Digital signatures have legal status now. 
+– For example, suppose you send a message to your bank over the Internet, to transfer some amount from 
+your account to your friend’s account, and digitally sign the message, this transaction has the same status 
+as the one wherein you fill in and sign the bank’s paper-based money-transfer slip.
+MKK
+KNAPSACK ALGORITHM
+• Actually, Ralph Merkle and Martin Hellman developed the first algorithm for public-key encryption, 
+called the Knapsack algorithm. It is based on the Knapsack problem. 
+• This is actually a simple problem.
+• Given a pile of items, each with different weights, is it possible to put some of them in a bag (i.e. 
+knapsack) in such a way that the knapsack has a certain weight?
+That is, if M1, M2, …, Mn are the given values and S is the sum, 
+ find out bi so that:
+S = b1M1 + b2M2 + … + bnMn
+• Each bi can be 0 or 1. A 1 indicates that the item is in the knapsack, and a 0 indicates that it is not.
+• A block of plain text equal in length to the number of items in the pile would select the items in the 
+knapsack. The cipher text is the resulting sum. 
+• For example, if the knapsack is 1, 7, 8, 12, 14, 20 then the plain text and the resulting cipher text is 
+as shown below
+MKK
+Knapsack example
+MKK
+SOME OTHER ALGORITHMS
+Elgamal digital signature
+• The ElGamal digital-signature scheme uses the same keys, but a different algorithm. 
+• The algorithm creates two digital signatures. 
+• In the verification step, these two signatures are tallied. 
+• The key-generation process here is the same as earlier and hence we would not repeat the discussion. The 
+public key remains (E1, E2, P) and the private key continues to be D. 
+Signature
+• The signature process works as follows:
+1. The sender selects a random number R.
+2. The sender computes the first signature S1 using the equation S1 = E1R mod P.
+3. The sender computes the second signature S2 using the equation S2 = (M – D * S1) * R–1 
+mod (P – 1), where M is the original message that needs to be signed.
+4. The sender sends M, S1, and S2 to the receiver.
+For example, 
+let E1 = 10, E2 = 4, P = 19, M = 14, D = 16, and R = 5.
+Then we have:
+Hence, the signature is (S1, S2) i.e. (3, 4). This is sent to the receiver.
+MKK
+Verification
+• The verification process works as follows:
+• 1. The receiver performs the first part of verification called V1 using the equation V1 = E1M mod P.
+• 2. The receiver performs the second part of verification called as V2 using the equation V2 = E2S1 * 
+S1S2 mod P.
+In our example:
+• Since V1 = V2, the signature is considered valid.
+MKK
+Attacks on digital signatures
+In general, three types of attacks are attempted against digital signatures, as outlined below:
+1. Chosen-message Attack
+In the chosen-message attack, the attacker tricks a genuine user into digitally signing messages that
+the user does not normally intend to sign.
+2. Known-message Attack
+In the known-message attack, the attacker obtains the previous few messages and the corresponding
+digital signatures from a genuine user.
+3. Key-only Attack
+In the key-only attack, the assumption is that some information was made public by a genuine user.
+This attacker now tries to misuse this public information.
+MKK
