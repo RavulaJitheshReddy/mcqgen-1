@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: mcqgenerator
+Version: 0.0.1
+Author: Jithesh Reddy
+Author-email: Jithesh20082002@gmail.com
+Requires-Dist: openai==1.16.1
+Requires-Dist: langchain==0.1.14
+Requires-Dist: streamlit==1.18.0
+Requires-Dist: python-dotenv==1.0.1
+Requires-Dist: PyPDF2==3.0

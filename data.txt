@@ -1,0 +1,81 @@
+Lists in Python
+A built-in data type that stores set of values
+marks = [87, 64, 33, 95, 76]
+It can store elements of different types (integer, float, string, etc.)
+student = [”Karan”
+, 85,
+“Delhi”] #student[0], student[1]..
+#marks[0], marks[1]..
+student[0] =
+“Arjun” #allowed in python
+len(student) #returns length
+Apna College
+List Slicing
+list_name[ starting_idx : ending_idx ] #ending idx is not included
+Similar to String Slicing
+marks = [87, 64, 33, 95, 76]
+marks[ 1 : 4 ] is [64, 33, 95]
+marks[ : 4 ] is same as marks[ 0 : 4]
+marks[ 1 : ] is same as marks[ 1 : len(marks) ]
+marks[ -3 : -1 ] is [33, 95]
+Apna College
+List Methods
+list.append(4) #adds one element at the end
+list = [2, 1, 3]
+list.insert( idx, el ) #insert element at index
+list.sort( ) #sorts in ascending order
+list.reverse( ) #reverses list
+list.sort( reverse=True ) #sorts in descending order
+[1, 2, 3]
+[2, 1, 3, 4]
+[3, 2, 1]
+A
+[3, 1, 2]
+pna College
+List Methods
+list.remove(1) #removes first occurrence of element
+list = [2, 1, 3, 1]
+list.pop( idx ) #removes element at idx
+[2, 3, 1]
+Apna College
+Tuples in Python
+A built-in data type that lets us create immutable sequences of values.
+tup = (87, 64, 33, 95, 76) #tup[0], tup[1]..
+tup[0] = 43 #NOT allowed in python
+tup1 = ( )
+tup2 = ( 1, )
+tup3 = ( 1, 2, 3 )
+Apna College
+Tuple Methods
+tup.index( el ) #returns index of first occurrence
+tup = (2, 1, 3, 1)
+tup.count( el ) #counts total occurrences tup.count(1) is 2
+tup.index(1) is 1
+Apna College
+Let‘s Practice
+WAP to ask the user to enter names of their 3 favorite movies & store them in a list.
+WAP to check if a list contains a palindrome of elements. (Hint: use copy( ) method)
+[1, 2, 3, 2, 1] [1,
+“abc”
+,
+“abc”
+, 1]
+Apna College
+Let‘s Practice
+WAP to count the number of students with the “A” grade in the following tuple.
+Store the above values in a list & sort them from “A” to “D”
+.
+[”C”
+,
+“D”
+,
+“A”
+,
+“A”
+,
+“B”
+,
+“B”
+,
+“A”]
+Apna College

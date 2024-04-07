@@ -1,0 +1,6 @@
+MCQ,Choices,Correct
+What is a built-in data type in Python that stores a set of values?,a: Tuple | b: List | c: Dictionary | d: Set,b
+Which method is used to add an element at the end of a list?,a: append() | b: insert() | c: sort() | d: remove(),a
+"What is the output of marks[1:4] if marks = [87, 64, 33, 95, 76]?","a: [64, 33, 95] | b: [64, 33] | c: [33, 95, 76] | d: [64, 33, 95, 76]",a
+Which method is used to count the total occurrences of an element in a tuple?,a: index() | b: sort() | c: count() | d: reverse(),c
+What is the difference between a list and a tuple in Python?,"a: List is immutable, Tuple is mutable | b: List can store elements of different types, Tuple cannot | c: List uses square brackets, Tuple uses parentheses | d: List has more built-in methods than Tuple",c
