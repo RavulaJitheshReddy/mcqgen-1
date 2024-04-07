@@ -1,6 +1,6 @@
 MCQ,Choices,Correct
-What is the main disadvantage of symmetric-key cryptography?,a: Key exchange problem | b: Slow encryption process | c: Requires two keys for encryption | d: Not secure for online transactions,a
-Who are considered the fathers of asymmetric-key cryptography?,a: Ron Rivest and Adi Shamir | b: James Ellis and Martin Hellman | c: Whitfield Diffie and Martin Hellman | d: NSA and CSEG,c
-What is the main purpose of using public and private keys in asymmetric-key cryptography?,a: To encrypt and decrypt using the same key | b: To share the private key with everyone | c: To solve the key exchange problem | d: To increase the encryption speed,c
-Which algorithm is widely accepted as the public-key solution in asymmetric-key cryptography?,a: ElGamal | b: Knapsack | c: RSA | d: Diffie-Hellman,c
-What is the purpose of digital signatures in asymmetric-key cryptography?,a: To encrypt messages | b: To decrypt messages | c: To authenticate the sender | d: To share private keys,c
+What is the main disadvantage of symmetric-key cryptography?,a: Key exchange problem | b: Slow encryption process | c: Inefficient decryption process | d: Limited security features,a
+Who are considered the fathers of asymmetric-key cryptography?,"a: Whitfield Diffie and Martin Hellman | b: Ron Rivest, Adi Shamir, and Len Adleman | c: James Ellis and Ralph Merkle | d: NSA and CSEG",a
+What is the main advantage of asymmetric-key cryptography?,a: Fast and efficient encryption process | b: Easy key exchange | c: Use of the same key for encryption and decryption | d: Secure communication without sharing private key,d
+Which algorithm is based on the mathematical fact of multiplying large prime numbers together?,a: Knapsack algorithm | b: RSA algorithm | c: ElGamal digital signature | d: Diffie-Hellman key exchange,b
+What type of attack involves an attacker tricking a genuine user into signing messages they do not intend to sign?,a: Chosen-message Attack | b: Known-message Attack | c: Key-only Attack | d: Public-key Attack,a
